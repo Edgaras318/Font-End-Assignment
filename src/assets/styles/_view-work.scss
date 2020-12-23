@@ -1,0 +1,23 @@
+@import "@/assets/styles/_work";
+
+#view-work {
+  padding: 40px 20px;
+}
+
+.view-work {
+  &__img {
+    @extend .work__img;
+  }
+
+  &__title {
+    @extend .work__title;
+  }
+
+  &__label {
+    @extend .work__label;
+  }
+
+  &__button {
+    display: none;
+  }
+}

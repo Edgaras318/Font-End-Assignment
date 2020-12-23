@@ -1,0 +1,193 @@
+@import "@/assets/styles/_variables.scss";
+
+.footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 50px 0;
+
+  &__img {
+    display: none;
+  }
+
+  &__top-arrow {
+    display: none;
+  }
+
+  &__divider {
+    border: 0;
+    border-bottom: 2px solid #272727;
+    height: 1px;
+    width: calc(100% - 20px);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: none;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &__item {
+    font-family: Teko-Regular;
+    font-size: 32px;
+    text-transform: uppercase;
+    transition: 200ms;
+  }
+
+  &__item:hover {
+    color: blue;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+
+  img {
+    object-fit: contain;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: grey;
+  line-height: 1.5;
+  display: grid;
+
+  &__copyright {
+    margin-top: 20px;
+  }
+}
+
+.arrow-container {
+  display: none;
+}
+
+.footer-bottom-middle {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width: 600px) {
+  .footer {
+    padding: 100px !important;
+    width: 95%;
+    &__top-arrow {
+      display: block;
+    }
+  }
+
+  .footer-top {
+    align-items: center;
+
+    &__logo {
+      object-fit: contain;
+      width: 100px;
+      display: block;
+    }
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    padding-top: 15px;
+    &__item {
+      font-size: 23px;
+    }
+
+    &__item {
+      padding: 0 20px;
+    }
+  }
+
+  .footer-icons {
+    flex-direction: row;
+    height: auto;
+
+    &__img {
+      padding-right: 20px;
+    }
+  }
+
+  .footer-bottom {
+    display: grid;
+    grid-template-areas: "middle middle cp";
+    justify-items: flex-end;
+    width: calc(100% - 20px);
+    padding-left: 10px;
+
+    &__copyright {
+      margin: 0;
+    }
+  }
+
+  .footer-bottom-middle {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0;
+    grid-gap: 60px;
+    grid-area: middle;
+    justify-items: start;
+  }
+
+  .footer-copyright-wrapper {
+    grid-area: cp;
+  }
+
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    &__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    &__button:hover &__img {
+      transform: translateY(-10px);
+    }
+
+    &__text {
+      font-family: Teko-Regular;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: blue;
+    }
+
+    &__img {
+      height: 40px;
+      width: 15px;
+      transition: 1s;
+    }
+  }
+
+  #c-footer {
+    display: flex;
+  }
+}
+
+// @media (min-width: 1025px) {
+//   /* big landscape tablets, laptops, and desktops */
+//   .footer-nav {
+//     &__item {
+//       font-size: 36px;
+//     }
+//   }
+// }
