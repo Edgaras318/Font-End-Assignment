@@ -32,7 +32,7 @@
     </div>
     <hr class="footer__divider">
     <div class="footer-bottom">
-      <!--<div class="footer-bottom-wrapper"> -->
+      <div></div>
       <div class="footer-bottom-middle">
         <span>Chamber of Commerce: 63464101</span>
         <span>VAT: NL 8552.47.502.B01</span>
@@ -42,7 +42,6 @@
         <span class="footer-bottom__copyright">&copy; 2020 Dept Agency</span>
       </div>
     </div>
-    <!-- </div> -->
   </footer>
   <div @click="scrollTop" class="arrow-container">
     <span class="arrow-container__button">

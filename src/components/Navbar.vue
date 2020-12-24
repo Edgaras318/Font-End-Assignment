@@ -29,7 +29,6 @@
     </li>
     <li class="navbar-divider">
       <router-link class="navbar__item" :class="{ 'navbar__item--show': showNavbar }" to="/">
-
         <span class="navbar__text" @click="toggleMenu">
           <img class="navbar__icon" src="@/assets/icons/menu-triangle.svg" />
           Diensten
@@ -38,7 +37,6 @@
     </li>
     <li class="navbar-divider">
       <router-link class="navbar__item" :class="{ 'navbar__item--show': showNavbar }" to="/">
-
         <span class="navbar__text" @click="toggleMenu">
           <img class="navbar__icon" src="@/assets/icons/menu-triangle.svg" />
           Partners

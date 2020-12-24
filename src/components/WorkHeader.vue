@@ -6,7 +6,7 @@
     </div>
     <span v-scrollanimation class="work-header__title">Work</span>
     <div class="c-padding">
-      <button class="button">View case</button>
+      <button class="work-header__button">View case</button>
     </div>
   </div>
 </div>
