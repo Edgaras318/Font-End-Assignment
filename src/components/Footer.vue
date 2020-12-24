@@ -34,9 +34,9 @@
     <div class="footer-bottom">
       <div></div>
       <div class="footer-bottom-middle">
-        <span>Chamber of Commerce: 63464101</span>
-        <span>VAT: NL 8552.47.502.B01</span>
-        <span class="footer-bottom__tac" href="/">Terms and conditions</span>
+        <span class="footer-bottom-middle__text">Chamber of Commerce: 63464101</span>
+        <span class="footer-bottom-middle__text">VAT: NL 8552.47.502.B01</span>
+        <span class="footer-bottom-middle__text" href="/">Terms and conditions</span>
       </div>
       <div class="footer-copyright-wrapper">
         <span class="footer-bottom__copyright">&copy; 2020 Dept Agency</span>

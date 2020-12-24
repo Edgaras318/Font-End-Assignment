@@ -70,7 +70,7 @@
 
   &__copyright {
     margin-top: 20px;
-    display:flex;
+    display: flex;
   }
 }
 
@@ -137,12 +137,12 @@
 
   .footer-bottom-middle {
     display: flex;
-    grid-gap: 20px;
-    margin-left: 115px;
-  }
+    margin-left: 130px;
 
-  // .footer-copyright-wrapper {
-  // }
+    &__text {
+      margin-right: 20px;
+    }
+  }
 
   .arrow-container {
     display: flex;
@@ -179,12 +179,3 @@
     display: flex;
   }
 }
-
-// @media (min-width: 1025px) {
-//   /* big landscape tablets, laptops, and desktops */
-//   .footer-nav {
-//     &__item {
-//       font-size: 36px;
-//     }
-//   }
-// }
